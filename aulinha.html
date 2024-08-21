@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Gerhead</title>
+    <link rel="stylesheet" type="text/css" href="alinha.css" media="screen" />
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Best projetos</h1>
+</header>
+
+<div class="container">
+    <h2>Top 10 carros para fazer um projetinho</h2>
+
+    <div>
+        <label for="line-select">Mostrar número de linhas:</label>
+        <select id="line-select">
+            <option value="1">1 linha</option>
+            <option value="2">2 linhas</option>
+            <option value="3">3 linhas</option>
+            <option value="4">4 linhas</option>
+            <option value="5">5 linhas</option>
+            <option value="10">10 linhas</option>
+        </select>
+    </div>
+
+    <table id="carros-table">
+        <thead>
+            <tr>
+                <th>Exemplo</th>
+                <th>Carro</th>
+                <th>Força</th>
+                <th>Preço FIP</th>
+                <th>Modelo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://i.pinimg.com/236x/43/22/7b/43227b1f9851311b9b5f2b0bbf91c5b7---honda-civic-si-accessories.jpg" alt="Honda Civic SI"></td>
+                <td>Honda Civic SI</td>
+                <td>192 HP</td>
+                <td>R$ 77.493,00</td>
+                <td>SI 2008</td>
+            </tr>
+            <tr class="hidden">
+                <td><img src="https://www.bing.com/th?id=OIP.s-gRBI8VfSe0IuteF80skwHaFj&w=175&h=185&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Nissan Silvia"></td>
+                <td>Nissan Silvia</td>
+                <td>197 HP</td>
+                <td>R$ 154.999,00</td>
+                <td>2</td>
+            </tr>
+            <tr class="hidden">
+                <td><img src="https://i.ytimg.com/vi/l0IIVYB4bpc/maxresdefault.jpg" alt="BMW M3"></td>
+                <td>BMW M3</td>
+                <td>431 HP</td>
+                <td>R$ 350.000,00</td>
+                <td>2020</td>
+            </tr>
+            <tr class="hidden">
+                <td><img src="https://th.bing.com/th/id/OIP.C527-5EKwPLRuKSzbeOP4gHaE8?rs=1&pid=ImgDetMain" alt="Ford Mustang"></td>
+                <td>Ford Mustang</td>
+                <td>450 HP</td>
+                <td>R$ 270.000,00</td>
+                <td>2021</td>
+            </tr>
+            <tr class="hidden">
+                <td><img src="https://i.ytimg.com/vi/Hue6kRHZk7g/maxresdefault.jpg" alt="Chevrolet Camaro"></td>
+                <td>Chevrolet Camaro</td>
+                <td>275 HP</td>
+                <td>R$ 220.000,00</td>
+                <td>2019</td>
+            </tr>
+            <tr class="hidden">
+                <td><img src="https://i.ytimg.com/vi/zxOsNzRnXdQ/maxresdefault.jpg" alt="Audi S4"></td>
+                <td>Audi S4</td>
+                <td>354 HP</td>
+                <td>R$ 300.000,00</td>
+                <td>2022</td>
+            </tr>
+            <tr class="hidden">
+                <td><img src="https://cdn.motor1.com/images/mgl/zxpRbq/s3/2024-mercedes-amg-c63-s-e-performance-exterior.jpg" alt="Mercedes AMG C63"></td>
+                <td>Mercedes AMG C63</td>
+                <td>469 HP</td>
+                <td>R$ 400.000,00</td>
+                <td>2022</td>
+            </tr>
+            <tr class="hidden">
+                <td><img src="https://th.bing.com/th/id/R.8accb1e643eba89a1403ec1287f1641c?rik=F09uo%2faNrOIjEQ&pid=ImgRaw&r=0" alt="Volkswagen Golf GTI"></td>
+                <td>Volkswagen Golf GTI</td>
+                <td>245 HP</td>
+                <td>R$ 190.000,00</td>
+                <td>2023</td>
+            </tr>
+            <tr class="hidden">
+                <td><img src="https://th.bing.com/th/id/OIP.b6-dhktoMFJyj5LBE0bC4QAAAA?rs=1&pid=ImgDetMain" alt="Subaru WRX"></td>
+                <td>Subaru WRX</td>
+                <td>268 HP</td>
+                <td>R$ 210.000,00</td>
+                <td>2022</td>
+            </tr>
+            <tr class="hidden">
+                <td><img src="https://th.bing.com/th/id/OIP.PD4v8mbItrsfjZ1ahHS56wHaEK?rs=1&pid=ImgDetMain" alt="Toyota Supra"></td>
+                <td>Toyota Supra</td>
+                <td>335 HP</td>
+                <td>R$ 300.000,00</td>
+                <td>2021</td>
+            </tr>
+            <tr class="hidden">
+                <td><img src="https://th.bing.com/th/id/OIP.Ff04GCRDe_GMhhl6uPly8AHaEy?rs=1&pid=ImgDetMain" alt="Porsche 911"></td>
+                <td>Porsche 911</td>
+                <td>379 HP</td>
+                <td>R$ 500.000,00</td>
+                <td>2022</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Videos de Projetos Sinistros</h2>
+    <ul id="linkzinho">
+        <li><a href="https://www.youtube.com/watch?v=oFg5PuILFbI">ÚNICO CIVIC SI COM KIT MUGEN COMPLETO DO BRASIL!</a></li>
+        <li><a href="https://www.youtube.com/watch?v=faaXi-oLNSs">BMW M3 MAIS FORTE DO BRASIL</a> - 26 de Agosto, 20:00</li>
+    </ul>
+
+    <h2>Links Úteis</h2>
+    <div class="links">
+        <p>Confira mais informações sobre o campeonato nos seguintes links:</p>
+        <ul>
+            <li><a href="https://www.futebolbrasileiro.com.br" target="_blank">Site Oficial do Campeonato Brasileiro</a></li>
+            <li><a href="https://www.cbf.com.br" target="_blank">Confederação Brasileira de Futebol</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    document.getElementById('line-select').addEventListener('change', function() {
+        var selectedValue = parseInt(this.value, 10);
+        var rows = document.querySelectorAll('#carros-table tbody tr');
+
+        // Hide all rows
+        rows.forEach(function(row, index) {
+            if (index === 0) {
+                row.classList.remove('hidden'); // Always show the first row
+            } else {
+                row.classList.add('hidden');
+            }
+        });
+
+        // Show the selected number of rows
+        for (var i = 0; i < selectedValue && i < rows.length; i++) {
+            rows[i].classList.remove('hidden');
+        }
+    });
+
+    // Trigger change event to apply default selection on load
+    document.getElementById('line-select').dispatchEvent(new Event('change'));
+</script>
+
+</body>
+</html>
