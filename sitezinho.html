@@ -1,310 +1,297 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vinicius Werner - Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-    <style>
-      body.dark-mode {
-        background-color: #121212; /* Black background */
-        color: #ffffff; /* White text */
-      }
-      body.light-mode {
-        background-color: #f4f4f4; /* Light gray background */
-        color: #333333; /* Dark text */
-      }
-      .header-bg {
-        background-color: #9B1B30; /* Dark red */
-        color: #ffffff; /* White text */
-        padding: 60px 0;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
-      .footer-bg {
-        background-color: #4B0D15; /* Dark pink */
-        color: #ffffff; /* White text */
-        padding: 20px 0;
-        text-align: center;
-        border-top: 2px solid #9B1B30; /* Dark red border */
-      }
-      .footer-bg.light-mode {
-        background-color: #ffffff; /* White */
-        color: #333333; /* Dark text */
-        border-top: 2px solid #9B1B30; /* Dark red border */
-      }
-      .form-section {
-        padding: 40px 0;
-      }
-      .card {
-        margin: 20px 0;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background-color: #FAD6D6; /* Light red card background */
-      }
-      .card.light-mode {
-        background-color: #ffffff; /* White card background */
-      }
-      .card-header {
-        background-color: #D50032; /* Darker red */
-        color: #ffffff; /* White text */
-        border-bottom: 2px solid #D50032; /* Dark red border */
-      }
-      .card-header.light-mode {
-        background-color: #D50032; /* Dark red */
-        color: #ffffff; /* White text */
-      }
-      .custom-select {
-        border-radius: 0.25rem;
-      }
-      .qr-container {
-        display: none;
-        text-align: center;
-        margin-top: 20px;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .qr-container.light-mode {
-        background: #ffffff;
-      }
-      .credit-card-info, .boleto-info {
-        display: none;
-        margin-top: 20px;
-      }
-      .qr-container h3 {
-        margin-bottom: 20px;
-        color: #D50032; /* Dark red */
-      }
-      .qr-container button, .btn-primary {
-        margin-top: 10px;
-        background-color: #D50032; /* Dark red */
-        border-color: #D50032; /* Dark red */
-        transition: background-color 0.3s, transform 0.3s;
-      }
-      .qr-container button:hover, .btn-primary:hover {
-        background-color: #A00024; /* Even darker red */
-        border-color: #A00024; /* Even darker red */
-        transform: scale(1.05);
-      }
-      .form-control, .form-select {
-        border-radius: 0.25rem;
-        border: 1px solid #444; /* Dark gray border */
-        background-color: #1e1e1e; /* Dark gray background */
-        color: #ffffff; /* White text */
-        transition: border-color 0.3s;
-      }
-      .form-control.light-mode, .form-select.light-mode {
-        background-color: #ffffff; /* White background */
-        color: #333333; /* Dark text */
-        border-color: #ccc; /* Light gray border */
-      }
-      .form-control:focus, .form-select:focus {
-        border-color: #D50032; /* Dark red */
-        box-shadow: 0 0 0 0.2rem rgba(221, 0, 50, 0.25);
-      }
-      .footer-bg a {
-        color: #ffffff; /* White text */
-        text-decoration: none;
-      }
-      .footer-bg a:hover {
-        text-decoration: underline;
-      }
-      .footer-bg.light-mode a {
-        color: #333333; /* Dark text */
-      }
-      @media (max-width: 768px) {
-        .header-bg h1 {
-          font-size: 2.5rem;
-        }
-      }
-      .mode-toggle-btn {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background-color: #D50032; /* Dark red */
-        color: #ffffff; /* White text */
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        z-index: 1000;
-        transition: background-color 0.3s;
-      }
-      .mode-toggle-btn:hover {
-        background-color: #A00024; /* Even darker red */
-      }
-    </style>
-  </head>
-  <body class="dark-mode">
-    <button id="mode-toggle" class="mode-toggle-btn">Modo Claro</button>
 
-    <!-- Header -->
-    <header class="header-bg">
-      <div class="container">
-        <h1 class="display-4">Bem-vindo ao Vinicius Werner!</h1>
-        <p class="lead">Cursos incríveis para transformar sua vida!</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vinicius Werner - Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    body.light-mode {
+      background-color: #f4f4f4;
+      color: #333333;
+    }
+
+    .header-bg {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 60px 0;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-bg img {
+      max-width: 40%;
+      height: auto;
+    }
+
+    .header-content {
+      max-width: 60%;
+    }
+
+    .footer-bg {
+      background-color: #4B0D15;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+      border-top: 2px solid #9B1B30;
+    }
+
+    .card {
+      margin: 20px 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .qr-container {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .mode-toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #D50032;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    .mode-toggle-btn:hover {
+      background-color: #A00024;
+    }
+
+    .form-section {
+      margin-top: 40px;
+    }
+
+    /* Modal styles for text color */
+    .modal-content {
+      background-color: #ffffff;
+      /* Light background for the modal */
+      color: #333333;
+      /* Dark text for readability */
+    }
+
+    .dark-mode .modal-content {
+      background-color: #212529;
+      /* Dark background for the modal in dark mode */
+      color: #ffffff;
+      /* Light text for readability in dark mode */
+    }
+  </style>
+</head>
+
+<body class="dark-mode">
+  <button id="mode-toggle" class="mode-toggle-btn">Modo Claro</button>
+
+  <!-- Header with Image -->
+  <header class="header-bg">
+    <div class="header-content">
+      <h1 class="display-4">Bem-vindo ao Tio meio Rico!</h1>
+      <p class="lead">Cursos incríveis para transformar sua vida!</p>
+    </div>
+    <img src="image.jpg" alt="Header Image">
+  </header>
+
+  <!-- Courses Section -->
+  <section class="container mt-5">
+    <h2 class="text-center mb-4" style="color: #D50032;">Nossos Cursos</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5>Curso: Se Tornar um Galeanteador Profissional</h5>
+          </div>
+          <div class="card-body">
+            <p>Aprenda a arte da conquista com este curso especializado.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCurso1">Saiba Mais</button>
+          </div>
+        </div>
       </div>
-    </header>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5>Curso: Programação Iniciante</h5>
+          </div>
+          <div class="card-body">
+            <p>Comece sua jornada no mundo da programação com este curso básico.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCurso2">Saiba Mais</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5>Curso: Como Se Tornar o Melhor Jogador de Fortnite</h5>
+          </div>
+          <div class="card-body">
+            <p>Domine as técnicas e estratégias para se destacar no Fortnite.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCurso3">Saiba Mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Main content -->
-    <main>
-      <div class="container form-section">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <div class="card">
-              <div class="card-header">
-                <h2>Inscreva-se Agora!</h2>
-              </div>
-              <div class="card-body">
-                <form>
-                  <div class="row mb-3">
-                    <div class="col-md-6">
-                      <label for="nome" class="form-label">Nome</label>
-                      <input type="text" class="form-control" id="nome" required>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="sobrenome" class="form-label">Sobrenome</label>
-                      <input type="text" class="form-control" id="sobrenome" required>
-                    </div>
+  <!-- Modals for course details -->
+  <!-- Modal Curso 1 -->
+  <div class="modal fade" id="modalCurso1" tabindex="-1" aria-labelledby="modalCurso1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCurso1Label">Curso: Se Tornar um Galeanteador Profissional</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Descrição:</strong> Aprenda as melhores técnicas para se tornar um mestre na arte da conquista.</p>
+          <p>Este curso vai ensinar habilidades de comunicação, linguagem corporal e confiança para se destacar em qualquer ambiente social.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Curso 2 -->
+  <div class="modal fade" id="modalCurso2" tabindex="-1" aria-labelledby="modalCurso2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCurso2Label">Curso de Programação Iniciante</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Descrição:</strong> Um curso perfeito para quem está começando no mundo da programação.</p>
+          <p>Aprenda os conceitos básicos de linguagens populares como Python, JavaScript e desenvolva seus primeiros projetos práticos!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Curso 3 -->
+  <div class="modal fade" id="modalCurso3" tabindex="-1" aria-labelledby="modalCurso3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCurso3Label">Como Se Tornar o Melhor Jogador de Fortnite</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Descrição:</strong> Aprenda as melhores estratégias e técnicas para dominar o Fortnite.</p>
+          <p>Desde o básico até táticas avançadas, este curso vai ajudá-lo a se tornar o melhor entre seus amigos e rivais!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <main>
+    <div class="container form-section">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h2>Inscreva-se Agora!</h2>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" required>
                   </div>
-                  <div class="mb-3">
-                    <label for="endereco" class="form-label">Endereço Completo</label>
-                    <input type="text" class="form-control" id="endereco" required>
+                  <div class="col-md-6">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" required>
                   </div>
-                  <div class="row mb-3">
-                    <div class="col-md-4">
-                      <label for="cep" class="form-label">CEP</label>
-                      <input type="text" class="form-control" id="cep" required>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="email" class="form-label">E-mail</label>
-                      <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="usuario" class="form-label">Usuário</label>
-                      <input type="text" class="form-control" id="usuario" required>
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <div class="col-md-6">
-                      <label for="senha" class="form-label">Senha</label>
-                      <input type="password" class="form-control" id="senha" required>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="curso" class="form-label">Curso</label>
-                      <select class="form-select" id="curso" required>
-                        <option value="">Selecione um curso</option>
-                        <option value="curso1">Curso 1</option>
-                        <option value="curso2">Curso 2</option>
-                        <option value="curso3">Curso 3</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <div class="col-md-6">
-                      <label for="estado" class="form-label">Estado</label>
-                      <input type="text" class="form-control" id="estado" required>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="pais" class="form-label">País</label>
-                      <input type="text" class="form-control" id="pais" required>
-                    </div>
-                  </div>
-                  <button type="button" class="btn btn-primary" id="gerar-qr">Gerar QR Code</button>
-                </form>
-                <div class="qr-container" id="qr-container">
-                  <h3>Seu QR Code:</h3>
-                  <div id="qrcode"></div>
-                  <button class="btn btn-primary" id="download-qr">Baixar QR Code</button>
                 </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="endereco" class="form-label">Endereço</label>
+                  <input type="text" class="form-control" id="endereco" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Inscrever-se</button>
+              </form>
+              <div class="qr-container" id="qr-container">
+                <div id="qrcode"></div>
+                <button class="btn btn-primary mt-3" id="download-qr">Baixar QR Code</button>
               </div>
+              <button class="btn btn-warning mt-3 w-100" id="gerar-qr">Gerar QR Code</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </main>
 
-      <!-- Courses Section -->
-      <section class="container mt-5">
-        <h2 class="text-center mb-4" style="color: #D50032;">Nossos Cursos</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-header">
-                <h5>Curso de Marketing Digital</h5>
-              </div>
-              <div class="card-body">
-                <p>Aprenda a impulsionar seu negócio online com as melhores estratégias.</p>
-                <button class="btn btn-primary">Saiba Mais</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-header">
-                <h5>Curso de Programação</h5>
-              </div>
-              <div class="card-body">
-                <p>Domine as linguagens de programação mais populares do mercado.</p>
-                <button class="btn btn-primary">Saiba Mais</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-header">
-                <h5>Curso de Design Gráfico</h5>
-              </div>
-              <div class="card-body">
-                <p>Aprenda a criar designs impactantes e profissionais.</p>
-                <button class="btn btn-primary">Saiba Mais</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+  <!-- Footer -->
+  <footer class="footer-bg">
+    <div class="container">
+      <p>&copy; 2024 Vinicius Werner. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="footer-bg">
-      <div class="container">
-        <p>&copy; 2023 Vinicius Werner. Todos os direitos reservados.</p>
-        <a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a>
-      </div>
-    </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const modeToggleBtn = document.getElementById("mode-toggle");
+    modeToggleBtn.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+      document.body.classList.toggle("light-mode");
+      modeToggleBtn.textContent = document.body.classList.contains("dark-mode") ? "Modo Claro" : "Modo Escuro";
+    });
 
-    <script>
-      document.getElementById('gerar-qr').onclick = function() {
-        const nome = document.getElementById('nome').value;
-        const email = document.getElementById('email').value;
-        const usuario = document.getElementById('usuario').value;
-        const senha = document.getElementById('senha').value;
-        const curso = document.getElementById('curso').value;
+    const qrContainer = document.getElementById("qr-container");
+    const gerarQrBtn = document.getElementById("gerar-qr");
+    const qrcodeElement = document.getElementById("qrcode");
 
-        const qrData = `Nome: ${nome}\nEmail: ${email}\nUsuário: ${usuario}\nSenha: ${senha}\nCurso: ${curso}`;
-        const qrcode = new QRCode(document.getElementById("qrcode"), {
-          text: qrData,
-          width: 128,
-          height: 128,
-        });
-        document.getElementById('qr-container').style.display = 'block';
-      };
+    gerarQrBtn.addEventListener("click", function () {
+      qrContainer.style.display = "block";
+      new QRCode(qrcodeElement, {
+        text: "https://www.viniciuswerner.com/inscricao/curso1",
+        width: 128,
+        height: 128
+      });
+    });
 
-      document.getElementById('download-qr').onclick = function() {
-        const canvas = document.querySelector('#qrcode canvas');
-        const link = document.createElement('a');
-        link.href = canvas.toDataURL('image/png');
-        link.download = 'qrcode.png';
-        link.click();
-      };
+    const downloadQrBtn = document.getElementById("download-qr");
+    downloadQrBtn.addEventListener("click", function () {
+      const qrCanvas = qrcodeElement.querySelector("canvas");
+      const link = document.createElement("a");
+      link.href = qrCanvas.toDataURL("image/png");
+      link.download = "qrcode.png";
+      link.click();
+    });
+  </script>
+</body>
 
-      document.getElementById('mode-toggle').onclick = function() {
-        const body = document.body;
-        body.classList.toggle('dark-mode');
-        body.classList.toggle('light-mode');
-        this.innerText = body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Escuro';
-      };
-    </script>
-  </body>
 </html>
